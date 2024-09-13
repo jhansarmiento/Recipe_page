@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Outfit', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+}
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+p, li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5f574e;
+  line-height: 1.6;
+}
+
+.background {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.main-card {
+  margin: 40px auto;
+  max-width: 740px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+  padding: 36px;
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.hero-img > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.vertical-padding {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.preparation-time {
+  border-radius: 12px;
+  padding: 25px;
+  background-color: hsl(330, 100%, 98%);
+  margin-bottom: 32px;
+}
+
+.preparation-time-title {
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+}
+
+.strong {
+  font-weight: 600;
+  color: hsl(24, 5%, 18%);
+}
+
+.subtitle {
+  color: hwb(14 20% 48%);
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.custom-hr {
+  border: none;
+  border-top: 1px solid #e4ded8;
+  margin: 20px 0;
+}
+
+.custom-list li::marker {
+  font-family: 'Outfit', sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.custom-list li {
+  padding-left: 22px;
+  margin: 0;
+}
+
+.custom-list li:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.custom-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.custom-table-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #5f574e;
+}
+
+.custom-table-value {
+  font-weight: 600;
+  font-size: 16px;
+  color: hwb(14 20% 48%);
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .main-card {
+    margin: 20px auto;
+    max-width: 90%; /* Hace que la tarjeta ocupe el 90% del ancho en pantallas pequeñas */
+  }
+
+  .main-content {
+    padding: 20px; /* Reduce el padding para pantallas más pequeñas */
+  }
+
+  h1, h2 {
+    font-size: 24px; /* Ajusta el tamaño de las fuentes para pantallas móviles */
+  }
+
+  p, li {
+    font-size: 14px; /* Reduce el tamaño de la fuente para una mejor legibilidad */
+  }
+
+  .hero-img {
+    margin-bottom: 10px; /* Reduce el margen inferior */
+  }
+
+  .preparation-time {
+    padding: 15px; /* Reduce el padding de la tarjeta de tiempo de preparación */
+  }
+
+  .custom-list li {
+    padding-left: 16px; /* Ajusta el padding para listas */
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 10px; /* Ajusta el padding en la tabla */
+  }
+}
